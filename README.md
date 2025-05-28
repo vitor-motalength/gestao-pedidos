@@ -15,7 +15,8 @@ Clonar significa **baixar uma cópia do projeto do GitHub para o seu computador*
 ### 💻 Terminal:
 
    ```
- git clone https://github.com/username/meu-projeto.git
+ git clone https://github.com/vitor-motalength/gestao-pedidos.git
+
   ```
 
 ## 2️⃣**Crie uma nova branch para sua tarefa:**
