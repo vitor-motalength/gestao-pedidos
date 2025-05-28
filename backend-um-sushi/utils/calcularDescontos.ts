@@ -1,8 +1,8 @@
-import { Item } from '../src/types/Item'
+import { Item } from '../types/item'
 import { calcularSubtotal } from './calcularSubtotal';
 import { calcularDescontoPorValor } from './calcularDescontoPorValor';
 import { calcularDescontoPorQuantidade } from './calcularDescontoPorQuantidade';
-import { ResultadoDesconto } from '../src/types/ResultadoDesconto';
+import { ResultadoDesconto } from '../types/ResultadosDesconto';
 
 export const calcularDescontos = (pedido: Item[]): ResultadoDesconto => {
   const motivos: string[] = [];
@@ -22,6 +22,6 @@ export const calcularDescontos = (pedido: Item[]): ResultadoDesconto => {
 
   return {
     valorDesconto,
-    motivo: motivos.join(' | ') 
+    motivos
   };
 };
