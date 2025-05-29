@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { produtosRecomendados } from "@/utils/produtosRecomendados";
-import historico from "@/data/historico.json";
+import { produtosRecomendados } from "../utils/produtosRecomendados";
+import historico from "../data/historico.json";
 
 const produtosSugeridos = produtosRecomendados(historico).slice(0, 3);
 
