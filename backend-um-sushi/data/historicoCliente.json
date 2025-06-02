@@ -1,0 +1,191 @@
+[
+    {
+        "clienteId": "001",
+        "data": "2025-05-01",
+        "itens": [
+            { 
+                "id": "01", 
+                "nome": "Sushi combo",      
+                "qtd": 1, 
+                "valor": 55.90 
+            },
+            { 
+                "id": "03",     
+                "nome": "Refrigerante", 
+                "qtd": 2, 
+                "valor": 11.00 
+            },
+            { 
+                "id": "02", 
+                "nome": "Temaki", 
+                "qtd": 1, 
+                "valor": 45.49 
+            }
+        ]
+    },
+    {
+        "clienteId": "001",
+        "data": "2025-05-10",
+        "itens": [
+            { 
+                "id": "01",   
+                "nome": "Sushi combo", 
+                "qtd": 2, 
+                "valor": 111.80 
+            },
+            { 
+                "id": "04", 
+                "nome": "Yakisoba", 
+                "qtd": 1, 
+                "valor": 65.90 
+            }
+        ]
+    },
+
+    {
+        "clienteId": "002",
+        "data": "2025-05-03",
+        "itens": [
+            { 
+                "id": "02", 
+                "nome": "Temaki", 
+                "qtd": 1, 
+                "valor": 45.49 
+            },
+            { 
+                "id": "03", 
+                "nome": "Refrigerante", 
+                "qtd": 3, 
+                "valor": 16.50 
+            }
+        ]
+    },
+    {
+        "clienteId": "002",
+        "data": "2025-05-12",
+        "itens": [
+            { 
+                "id": "04", 
+                "nome": "Yakisoba", 
+                "qtd": 1, 
+                "valor": 65.90 
+            },
+            { 
+                "id": "03", 
+                "nome": "Refrigerante", 
+                "qtd": 3, 
+                "valor": 16.50 
+            },
+            { 
+                "id": "01", 
+                "nome": "Sushi combo", 
+                "qtd": 2, 
+                "valor": 90.98 
+            }
+        ]
+    },
+
+    {
+        "clienteId": "003",
+        "data": "2025-04-30",
+        "itens": [
+            { 
+                "id": "02", 
+                "nome": "Temaki", 
+                "qtd": 1, 
+                "valor": 45.49 
+            },     
+            { 
+                "id": "03", 
+                "nome": "Refrigerante", 
+                "qtd": 5, 
+                "valor": 27.50 
+            },
+            { 
+                "id": "04", 
+                "nome": "Yakisoba", 
+                "qtd": 3, 
+                "valor": 197.70 
+            }
+        ]
+    },
+    {
+        "clienteId": "003",
+        "data": "2025-05-04",
+        "itens": [
+            { 
+                "id": "03", 
+                "nome": "Refrigerante", 
+                "qtd": 2, 
+                "valor": 11.00 
+            },
+            { 
+                "id": "05", 
+                "nome": "Harumaki", 
+                "qtd": 4, 
+                "valor": 32.00 
+            }
+        ]
+    },
+    {
+        "clienteId": "003",
+        "data": "2025-05-18",
+        "itens": [
+            { 
+                "id": "05", 
+                "nome": "Harumaki", 
+                "qtd": 3, 
+                "valor": 24.00 
+            },
+            { 
+                "id": "02", 
+                "nome": "Temaki", 
+                "qtd": 1, 
+                "valor": 45.49 
+            }
+        ]
+    },
+    
+    {
+        "clienteId": "004",
+        "data": "2025-05-02",
+        "itens": [
+            { 
+                "id": "01", 
+                "nome": "Sushi combo", 
+                "qtd": 3, 
+                "valor": 167.70 
+            },
+            { 
+                "id": "04", 
+                "nome": "Yakisoba", 
+                "qtd": 2, 
+                "valor": 131.80 
+            },
+            { 
+                "id": "03", 
+                "nome": "Refrigerante", 
+                "qtd": 5, 
+                "valor": 27.50 
+            }
+        ]
+    },
+    {
+        "clienteId": "004",
+        "data": "2025-05-15",
+        "itens": [
+            {
+                "id": "02",
+                "nome": "Temaki",
+                "qtd": 2,
+                "valor": 90.98
+            },
+            {
+                "id": "05",
+                "nome": "Harumaki",
+                "qtd": 5,
+                "valor": 40.00
+            }
+        ]
+    }
+]
