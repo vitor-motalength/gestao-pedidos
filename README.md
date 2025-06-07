@@ -38,7 +38,7 @@ docs/readme
  **Objetivo:** Garantir que seu projeto está com a versão mais recente do código.
    Antes de começar a editar qualquer coisa, atualize seu repositório com a versão mais recente da branch principal (`main`):
 ```
-   git checkout main
+
     git pull origin main
     git checkout tipo/nome-da-tarefa
     git rebase main
