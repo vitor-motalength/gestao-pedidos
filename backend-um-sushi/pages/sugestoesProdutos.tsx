@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { produtosRecomendados } from "../utils/produtosRecomendados";
 import historico from "../data/historico.json";
 

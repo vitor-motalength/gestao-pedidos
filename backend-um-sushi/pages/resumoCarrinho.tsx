@@ -1,5 +1,5 @@
 import React from "react";
-import { Item } from "../src/types/Item";
+import{ Item } from "types/item"
 import { calcularSubtotal } from "../utils/calcularSubtotal";
 import { aplicarPromocoes } from "../utils/aplicarPromocoes";
 
