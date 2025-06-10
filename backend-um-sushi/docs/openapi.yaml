@@ -1,0 +1,66 @@
+openapi: 3.0.0
+info:
+  title: API de Sugestão de Produtos
+  version: 1.0.0
+  description: API que fornece sugestões de produtos com base no histórico de compras dos clientes.
+
+paths:
+  /historico:
+    get:
+      summary: Retorna o histórico de compras
+      responses:
+        '200':
+          description: Lista de compras feitas por clientes
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/HistoricoCompra'
+
+  /sugestoes:
+    get:
+      summary: Retorna sugestões de produtos com base no histórico
+      parameters:
+        - in: query
+          name: clienteId
+          schema:
+            type: string
+          required: false
+          description: ID do cliente para sugestões personalizadas
+      responses:
+        '200':
+          description: Lista de produtos sugeridos
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Produto'
+
+components:
+  schemas:
+    HistoricoCompra:
+      type: object
+      properties:
+        clienteId:
+          type: string
+        data:
+          type: string
+          format: date
+        itens:
+          type: array
+          items:
+            $ref: '#/components/schemas/Produto'
+
+    Produto:
+      type: object
+      properties:
+        id:
+          type: string
+        nome:
+          type: string
+        qtd:
+          type: integer
+        valor:
+          type: number
