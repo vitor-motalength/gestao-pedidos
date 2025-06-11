@@ -1,9 +1,10 @@
-const { produtosRecomendados } = require('../utils/produtosRecomendados.js');
+import { produtosRecomendados } from "../utils/produtosRecomendados";
+import { Pedido } from 'types/pedido';
+import { ProdutoRecomendado } from 'types/produtoRecomendado';
 
 describe('produtosRecomendados', () => {
   it("retorna os produtos agregados e ordenados corretamente por quantidade total, com base em múltiplos pedidos", () => {
-    
-    const historico = [
+    const historico: Pedido[] = [
       {
         clienteId: '001',
         data: '2025-05-01',
@@ -42,7 +43,7 @@ describe('produtosRecomendados', () => {
       }
     ];
 
-    const resultado = produtosRecomendados(historico);
+    const resultado: ProdutoRecomendado[] = produtosRecomendados(historico);
 
     expect(resultado).toEqual([
       { id: '03', nome: 'Refrigerante', totalQtd: 15, valor: 27.50 },
@@ -53,22 +54,21 @@ describe('produtosRecomendados', () => {
   });
 
   it("retorna lista vazia se o histórico for uma string", () => {
-    const historico = 'isso não é um array';
+    const historico: any = 'isso não é um array';
     const resultado = produtosRecomendados(historico);
     expect(resultado).toEqual([]);
   });
 
   it("ignora pedidos com estrutura inválida ou sem itens", () => {
-
-    const historico = [
-      { clienteId: '001', data: '2025-05-01', itens: null },
-      { clienteId: '002', data: '2025-05-02', itens: 'string' },
+    const historico: Pedido[] = [
+      { clienteId: '001', data: '2025-05-01', itens: null as any },
+      { clienteId: '002', data: '2025-05-02', itens: 'string' as any },
       { clienteId: '003', data: '2025-05-03', itens: [] },
       {
         clienteId: '004',
         data: '2025-05-04',
         itens: [
-          { nome: 'Produto sem ID', qtd: 1, valor: 9.99 }
+          { nome: 'Produto sem ID', qtd: 1, valor: 9.99 } as any
         ]
       },
       {
@@ -87,14 +87,13 @@ describe('produtosRecomendados', () => {
   });
 
   it("retorna lista vazia se o histórico for um array vazio", () => {
-    const historico = [];
+    const historico: Pedido[] = [];
     const resultado = produtosRecomendados(historico);
     expect(resultado).toEqual([]);
   });
 
   it("usa o último valor encontrado para cada produto ao consolidar", () => {
-
-    const historico = [
+    const historico: Pedido[] = [
       {
         clienteId: '001',
         data: '2025-05-01',
