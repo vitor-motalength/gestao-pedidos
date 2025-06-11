@@ -1,6 +1,7 @@
-export type Item = {
+export interface Item {
   id: string;
   nome: string;
-  qtd: number;
   valor: number;
-};
+  qtd: number;
+  desconto?: number;
+}
